@@ -17,5 +17,5 @@ eureka:
     routes:
       eventos:
         path: /evento/**
-        url: http://localhost:9093/
+        serviceId: SEMPREUFG-EVENTO-SERVICE
         stripPrefix: true
