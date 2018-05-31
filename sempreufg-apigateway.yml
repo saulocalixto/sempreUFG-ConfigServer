@@ -1,7 +1,8 @@
+
 server:
   port: 9094
-    
-  eureka:
+
+eureka:
   instance:
     hostname: localhost
     port: 9091
@@ -16,6 +17,5 @@ server:
     routes:
       eventos:
         path: /evento/**
-        serviceId: sempreufg-evento-service
+        serviceId: SEMPREUFG-EVENTO-SERVICE
         stripPrefix: false
-    
