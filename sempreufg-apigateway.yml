@@ -18,4 +18,4 @@ eureka:
       eventos:
         path: /evento/**
         url: http://localhost:9093/
-        stripPrefix: false
+        stripPrefix: true
