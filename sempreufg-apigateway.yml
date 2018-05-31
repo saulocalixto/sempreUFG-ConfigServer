@@ -14,9 +14,8 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
   zuul:
-    prefix: /api
     routes:
-      eventos:
+      evento:
         path: /evento/**
         serviceId: SEMPREUFG-EVENTO-SERVICE
         stripPrefix: false
