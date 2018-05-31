@@ -17,5 +17,5 @@ eureka:
     routes:
       evento:
         path: /evento/**
-        serviceId: SEMPREUFG-EVENTO-SERVICE
+        serviceId: sempreufg-evento-service
         stripPrefix: false
