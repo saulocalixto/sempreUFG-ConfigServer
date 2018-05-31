@@ -16,6 +16,6 @@ eureka:
   zuul:
     routes:
       evento:
-        path: /evento/**
+        path: /api/evento/**
         serviceId: sempreufg-evento-service
         stripPrefix: false
