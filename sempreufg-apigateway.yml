@@ -19,4 +19,4 @@ eureka:
       eventos:
         path: /evento/**
         serviceId: SEMPREUFG-EVENTO-SERVICE
-        stripPrefix: true
+        stripPrefix: false
