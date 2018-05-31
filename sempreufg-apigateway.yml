@@ -17,4 +17,5 @@ server:
       eventos:
         path: /evento/**
         serviceId: sempreufg-evento-service
+        stripPrefix: false
     
