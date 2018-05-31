@@ -15,7 +15,7 @@ eureka:
   zuul:
     routes:
       eventos:
-        url: http://localhost:9093
+        path: /evento/**
         serviceId: SEMPREUFG-EVENTO-SERVICE
         stripPrefix: false
     
