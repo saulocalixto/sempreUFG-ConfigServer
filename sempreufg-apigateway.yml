@@ -15,8 +15,12 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
   zuul:
     routes:
+    uaa:
+      path: /autenticacao/**
+      sensitiveHeaders:
+        serviceId: sempreufg-auth-server
       eventos:
         path: /evento/**
-        sensitiveHeaders: Cookie,Set-Cookie,Authorization
-        serviceId: sempreufg-evento-service
+        sensitiveHeaders:
+          serviceId: sempreufg-evento-service
         stripPrefix: false
