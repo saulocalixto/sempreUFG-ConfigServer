@@ -25,3 +25,10 @@ eureka:
         sensitive-headers: Cookie,Set-Cookie
         serviceId: sempreufg-evento-service
         stripPrefix: false
+        
+  authserver:
+  hostname: http://localhost:9092
+    security:
+      oauth2:
+        resource:
+          userInfoUri: ${authserver.hostname}/user
