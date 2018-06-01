@@ -22,6 +22,6 @@ eureka:
         serviceId: sempreufg-auth-server
       eventos:
         path: /evento/**
-        sensitiveHeaders:
-          serviceId: sempreufg-evento-service
+        sensitive-headers: Cookie,Set-Cookie
+        serviceId: sempreufg-evento-service
         stripPrefix: false
