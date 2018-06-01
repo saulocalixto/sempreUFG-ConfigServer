@@ -17,5 +17,6 @@ eureka:
     routes:
       eventos:
         path: /evento/**
+        sensitiveHeaders: Cookie,Set-Cookie,Authorization
         serviceId: sempreufg-evento-service
         stripPrefix: false
