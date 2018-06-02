@@ -14,7 +14,6 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
   zuul:
-    ignoredServices: '*'
     routes:
     uaa:
       path: /autenticacao/**
