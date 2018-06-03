@@ -22,7 +22,7 @@ spring:
         password: '12345'
         username: postgres
     jpa:
-        database-platform: org.hibernate.dialect.postgresqldialect
+        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
         generate-ddl: false
         hibernate:
             ddl-auto: create
