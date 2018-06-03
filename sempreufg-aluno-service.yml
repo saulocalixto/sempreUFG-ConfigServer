@@ -18,7 +18,7 @@ spring:
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
-        url: jdbc:postgresql://localhost/aluno
+        url: jdbc:postgresql://localhost:5432/aluno
         password: '12345'
         username: root
     jpa:
