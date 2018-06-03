@@ -20,7 +20,7 @@ spring:
         platform: postgres
         url: jdbc:postgresql://localhost:5432/aluno
         password: '12345'
-        username: root
+        username: postgres
     jpa:
         database-platform: org.hibernate.dialect.postgresqldialect
         generate-ddl: false
