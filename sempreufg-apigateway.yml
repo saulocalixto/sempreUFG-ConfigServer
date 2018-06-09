@@ -17,10 +17,10 @@ eureka:
     ignoredServices: '*'
     routes:
       uaa:
-        path: /uaa/**
+        path: /api/uaa/**
         sensitiveHeaders:
         serviceId: SEMPREUFG-AUTH-SERVER
       eventos:
-        path: /evento/**
+        path: /api/evento/**
         sensitiveHeaders:
         serviceId: sempreufg-evento-service
