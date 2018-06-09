@@ -32,4 +32,5 @@ eureka:
       eventos:
         path: /evento/**
         sensitiveHeaders:
-        serviceId: sempreufg-evento-service
+        url: http://localhost:9093
+        #serviceId: sempreufg-evento-service
