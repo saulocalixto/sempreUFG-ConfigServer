@@ -18,17 +18,18 @@ eureka:
   security:
     oauth2:
       resource:
-        accessTokenUri: http://uaa-service/uaa/oauth/token
+        accessTokenUri: http://api/uaa-service/uaa/oauth/token
         userAuthorizationUri: /uaa/oauth/token
   
   zuul:
+    prefix: /api
     ignoredServices: '*'
     routes:
       uaa:
-        path: /api/uaa/**
+        path: /uaa/**
         sensitiveHeaders:
         serviceId: SEMPREUFG-AUTH-SERVER
       eventos:
-        path: /api/evento/**
+        path: /evento/**
         sensitiveHeaders:
         serviceId: sempreufg-evento-service
