@@ -16,7 +16,11 @@ eureka:
   zuul:
     ignoredServices: '*'
     routes:
+      uaa:
+        path: /uaa/**
+        sensitiveHeaders:
+        serviceId: SEMPREUFG-AUTH-SERVER
       eventos:
         path: /evento/**
+        sensitiveHeaders:
         serviceId: sempreufg-evento-service
-        sensitive-headers: Cookie,Set-Cookie
