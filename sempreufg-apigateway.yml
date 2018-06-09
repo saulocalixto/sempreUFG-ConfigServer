@@ -18,7 +18,8 @@ eureka:
   security:
     oauth2:
       resource:
-        userInfoUri: ${authserver.hostname}/user
+        accessTokenUri: http://uaa-service/uaa/oauth/token
+        userAuthorizationUri: /uaa/oauth/token
   
   zuul:
     ignoredServices: '*'
