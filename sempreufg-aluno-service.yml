@@ -18,14 +18,14 @@ spring:
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/aluno
+        url: jdbc:postgresql://localhost:5432/sempreUFGaluno
         password: '12345'
         username: postgres
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL94Dialect
         generate-ddl: false
         hibernate:
-            ddl-auto: create
+            ddl-auto: update
         show-sql: true
 
 authserver:
