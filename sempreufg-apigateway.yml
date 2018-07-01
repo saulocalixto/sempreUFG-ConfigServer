@@ -2,14 +2,12 @@
 server:
   port: 9094
   
-    datasource:
-        data: classpath:/sql/data.sql
-        driver-class-name: com.mysql.jdbc.Driver
-        password: '1234'
-        platform: mysql
-        schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
-        username: root
+  
+spring:  
+  datasource:
+    url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
+    username: root
+    password: '1234
 
 eureka:
   instance:
