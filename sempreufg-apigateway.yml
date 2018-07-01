@@ -3,6 +3,8 @@ server:
   port: 9094
   
 spring:
+    application:
+      name: sempreufg-apigateway
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
