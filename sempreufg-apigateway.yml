@@ -33,13 +33,15 @@ eureka:
         path: /evento/**
         sensitiveHeaders:
         serviceId: sempreufg-evento-service
-        
+            
   security:
-    oauth2:
-        client:
-            access-token-validity-seconds: 1800
-            authorized-grant-types: password,refresh_token
-            client-id: coderef
-            client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
-            resource-ids: resources
-            scope: read,write
+  oauth2:    
+    client:
+      accessTokenUri: http://localhost:9092/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9092/uaa/oauth/authorize
+      clientId: coderef
+      clientSecret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2  
+    resource:
+      userInfoUri: http://localhost:9092/uaa/user
+      preferTokenInfo: false  
+  sessions: ALWAYS
