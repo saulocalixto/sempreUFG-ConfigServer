@@ -27,11 +27,6 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
   authserver:
   hostname: http://localhost:9092
-  security:
-    oauth2:
-      resource:
-        accessTokenUri: http://api/uaa-service/uaa/oauth/token
-        userAuthorizationUri: /uaa/oauth/token
   
   zuul:
     prefix: /api
